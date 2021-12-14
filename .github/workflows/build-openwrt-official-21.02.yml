@@ -29,7 +29,7 @@ env:
   DELETE_RELEASE: true
   DELETE_ARTIFACTS: true
   RECENT_LASTEST: 3
-  TZ: Asia/Shanghai
+  TZ: Asia/Jakarta
 
 jobs:
   build:
