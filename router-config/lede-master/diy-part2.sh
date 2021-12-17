@@ -39,9 +39,6 @@ svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/
 # Add luci-app-eqos
 svn co https://github.com/swxk521/luci-app-eqos/trunk package/eqos
 
-# Add luci-app-passwall
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk package/openwrt-passwall
-
 # Add luci-theme-tano
 svn co https://github.com/tano-systems/luci-theme-tano/trunk/src/luci-theme-tano package/luci-theme-tano
 
@@ -64,6 +61,9 @@ git clone -b 18.06 https://github.com/garypang13/luci-theme-edge.git package/luc
 # Add luci-app-openclash
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/openwrt-openclash
 pushd package/openwrt-openclash/tools/po2lmo && make && sudo make install 2>/dev/null && popd
+
+# Add luci-app-passwall
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk package/openwrt-passwall
 
 # coolsnowwolf default software package replaced with Lienol related software package
 # rm -rf feeds/packages/utils/{containerd,libnetwork,runc,tini}
