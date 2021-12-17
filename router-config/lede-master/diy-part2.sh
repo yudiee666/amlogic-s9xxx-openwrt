@@ -42,9 +42,8 @@ svn co https://github.com/swxk521/luci-app-eqos/trunk package/eqos
 # Add luci-theme-tano
 svn co https://github.com/tano-systems/luci-theme-tano/trunk/src/luci-theme-tano package/luci-theme-tano
 
-# Add luci-theme-argon
-rm -rf package/lean/luci-theme-argon
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
+# Add luci-theme-adguard
+svn co https://github.com/rufengsuixing/luci-app-adguardhome/trunk package/lean/luci-app-adguardhome
 
 # Add luci-theme-atmaterial
 svn co https://github.com/Kinodi/luci-theme-atmaterial/trunk package/luci-theme-atmaterial
