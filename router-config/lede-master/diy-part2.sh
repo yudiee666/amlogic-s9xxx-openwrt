@@ -39,17 +39,16 @@ svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/
 # Add luci-app-eqos
 svn co https://github.com/swxk521/luci-app-eqos/trunk package/eqos
 
-# Add luci-theme-tano
-svn co https://github.com/tano-systems/luci-theme-tano/trunk/src/luci-theme-tano package/luci-theme-tano
+# Add luci-app-passwall
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk package/openwrt-passwall
 
-# Add luci-theme-adguard
-svn co https://github.com/rufengsuixing/luci-app-adguardhome/trunk package/lean/luci-app-adguardhome
+# Add luci-theme-argon
+rm -rf package/lean/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 
 # Add luci-theme-atmaterial
 svn co https://github.com/Kinodi/luci-theme-atmaterial/trunk package/luci-theme-atmaterial
 
-# Add luci-theme-netgear
-svn co https://github.com/i028/luci-theme-netgear/trunk package/luci-theme-netgear
 
 # Add luci-theme-infinityfreedom
 svn co https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk package/luci-theme-infinityfreedom
@@ -61,8 +60,9 @@ git clone -b 18.06 https://github.com/garypang13/luci-theme-edge.git package/luc
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/openwrt-openclash
 pushd package/openwrt-openclash/tools/po2lmo && make && sudo make install 2>/dev/null && popd
 
-# Add luci-app-passwall
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk package/openwrt-passwall
+# Add luci-app-ssr-plus
+svn co https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus package/openwrt-ssrplus
+rm -rf package/openwrt-ssrplus/luci-app-ssr-plus/po/zh_Hans 2>/dev/null
 
 # coolsnowwolf default software package replaced with Lienol related software package
 # rm -rf feeds/packages/utils/{containerd,libnetwork,runc,tini}
